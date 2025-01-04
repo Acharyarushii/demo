@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="loginstyle.css" />
+    <title>Log in</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="img">
+        <img src="logo2.png" alt="" />
+      </div>
+      <div class="address">
+        <p class="h1">Gramonnati Mandal's</p>
+        <p class="h2">Art's, Commerce & Science College</p>
+        <p class="h3">
+          Narayangaon, Tal: Junnar, Dist:Pune, Maharashtra - 410504<br />
+          Affiliated to Savitribai Phule Pune University<br />
+          ID No. PU/PN/1993/100
+        </p>
+      </div>
+      <div class="img">
+        <img src="logo1.png" alt="" />
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <section>
+        <div class="box1">
+          <form action="">
+            <fieldset class="fieldset1">
+              <legend>Student Registration</legend>
+              <button class="btn1">
+                <a href="registrationtab.html">Click for Registration</a>
+              </button>
+            </fieldset>
+
+            <fieldset class="fieldset2">
+              <legend>Log in</legend>
+              <div class="label1">
+                <select name="courses" required>
+                  <option>Select Course</option>
+                  <option value="BBA(CA)">BBA(CA)</option>
+                  <option value="BCA">BCA</option>
+                  <option value="BBA">BBA</option>
+                </select>
+              </div>
+              <div class="label1">
+                <label for="Registared-Mobile-No">Registared Mobile No</label>
+                <input
+                  type="number"
+                  name="Registared-Mobile-No"
+                  placeholder="Enter Registared Mobile No"
+                  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="10"
+                />
+              </div>
+              <div class="label1">
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" placeholder="Password" />
+                <button class="login">
+                  <a href="addpannel.html">Login</a>
+                </button>
+             
+                  <a href="" class="fg">Forget Password</a>
+               
+            
+            </fieldset>
+          </form>
+        </div>
+        <div class="box2">
+          <img src="clg img.jpg" alt="college image" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

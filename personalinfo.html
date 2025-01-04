@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="personalinfostyle.css" />
+    <title>Personnal Information</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="img">
+        <img src="logo2.png" alt="" />
+      </div>
+      <div class="address">
+        <p class="h1">Gramonnati Mandal's</p>
+        <p class="h2">Art's, Commerce & Science College</p>
+        <p class="h3">
+          Narayangaon, Tal: Junnar, Dist:Pune, Maharashtra - 410504<br />
+          Affiliated to Savitribai Phule Pune University<br />
+          ID No. PU/PN/1993/100
+        </p>
+      </div>
+      <div class="img">
+        <img src="logo1.png" alt="" />
+      </div>
+    </header>
+    <main>
+      <section>
+        <form action="">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="field-sec-one">
+              <label for="academic-year" aria-checked="false"
+                >Academic Year<span class="red">*</span></label
+              >
+              <input
+                type="number"
+                name="academic-year"
+                placeholder="Enter Academic Year"
+                required
+              />
+            </div>
+
+            <div class="feild-sec-two">
+              <div class="feild-set-one">
+                <label for="name">Name<span class="red">*</span></label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                />
+              </div>
+              <div class="feild-set-two">
+                <label for="fathers-husband-name"
+                  >Father's/Husband Name<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="fathers-husband-name"
+                  placeholder="Enter Father's/Husband Name"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-three">
+                <label for="surname">Surname<span class="red">*</span></label>
+                <input
+                  type="text"
+                  name="surname"
+                  placeholder="Enter Surname"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-four">
+                <label for="mother-name"
+                  >Mother's Name Only<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="mother-name"
+                  placeholder="Enter Mother's Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="feild-sec-three">
+              <div class="feild-set-five">
+                <label for="mobile-no"
+                  >Mobile No.<span class="red">*</span></label
+                >
+                <input
+                  type="tel"
+                  name="mobile-no"
+                  placeholder="Enter Mobile No"
+                  required
+                />
+              </div>
+              <div class="feild-set-six">
+                <label for="registration-for-course"
+                  >Registration for course<span class="red">*</span></label
+                >
+                <input type="text" name="registration-for-course" required />
+              </div>
+
+              <div class="feild-set-seven">
+                <label for="year">Year<span class="red">*</span></label>
+                <input type="text" name="year" required />
+              </div>
+
+              <div class="feild-set-eight">
+                <label for="dob">Date of Birth<span class="red">*</span></label>
+                <input type="date" name="dob" equired />
+              </div>
+            </div>
+
+            <div class="feild-sec-four">
+              <div class="feild-set-nine">
+                <label for="mobile-no">Gender<span class="red">*</span></label>
+                <select name="gender">
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="feild-set-ten">
+                <label for="religion">Religion<span class="red">*</span></label>
+                <select name="religion">
+                  <option value="">Select Religion</option>
+                  <option value="hindu">Hindu</option>
+                  <option value="muslime">Muslime</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="feild-set-eleven">
+                <label for="category">Category<span class="red">*</span></label>
+                <select name="category">
+                  <option value="">Select Category</option>
+                  <option value="open">Open</option>
+                  <option value="st">ST</option>
+                  <option value="ct">SC</option>
+                  <option value="ews">EWS</option>
+                </select>
+              </div>
+
+              <div class="feild-set-twelve">
+                <label for="caste">Caste<span class="red">*</span></label>
+                <input type="text" name="caste" placeholder="Caste" required />
+              </div>
+            </div>
+
+            <div class="feild-sec-five">
+              <div class="feild-set-thirteen">
+                <label for="sub-caste">Sub Caste</label>
+                <input type="text" name="sub-caste" placeholder="Sub Caste" />
+              </div>
+              <div class="feild-set-fourteen">
+                <label for="fees-category"
+                  >Fees Category<span class="red">*</span></label
+                >
+                <select name="fees-category">
+                  <option value="">Select Fees Category</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+
+              <div class="feild-set-fifteen">
+                <label for="adhaar-card-no"
+                  >Aadhar Card No.<span class="red">*</span></label
+                >
+                <input
+                  type="number"
+                  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="12"
+                  name="adhaar-card-no"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-sixteen">
+                <label for="minority">Minority<span class="red">*</span></label>
+                <input
+                  type="text"
+                  name="minority"
+                  placeholder="Enter Minority"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="feild-sec-six">
+              <div class="feild-set-eighteen">
+                <label for="marital-status"
+                  >Marital Status<span class="red">*</span></label
+                >
+                <select name="marital-status">
+                  <option value="">Select</option>
+                  <option value="unmarried">Unmarried</option>
+                  <option value="married">Married</option>
+                  <option value="divorced">Divorced</option>
+                </select>
+              </div>
+              <div class="feild-set-nineteen">
+                <label for="institution-last-attend"
+                  >Institution/College Last Attend<span class="red"
+                    >*</span
+                  ></label
+                >
+                <select name="institution-last-attend">
+                  <option value="">All</option>
+                  <option value="same-college">Same College</option>
+                  <option value="other-college">Other College</option>
+                  <option value=""></option>
+                </select>
+              </div>
+
+              <div class="feild-set-twenty">
+                <label for="email-id">Email ID<span class="red">*</span></label>
+                <input type="email" name="email-id" placeholder="Enter " />
+              </div>
+
+              <div class="feild-set-twenty-one">
+                <label for="blood-group"
+                  >Blood Group<span class="red">*</span></label
+                >
+                <select name="blood-group">
+                  <option value="">Select</option>
+                  <option value="A+">A+</option>
+                  <option value=">A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="feild-sec-seven">
+              <div class="feild-set-twenty-two">
+                <label for="nationality"
+                  >Nationality<span class="red">*</span></label
+                >
+                <select name="nationality">
+                  <option value="">Select Nationality</option>
+                  <option value="india">India</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="feild-set-twenty-three">
+                <label for="mother-tounge"
+                  >Mother Tounge<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="mother-tounge"
+                  placeholder="Mother Tounge"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-twenty-four">
+                <label for="hobbies">Hobbies</label>
+                <input type="text" name="hobbies" placeholder="Hobbies" />
+              </div>
+
+              <div class="feild-set-twenty-five">
+                <label for="sports">Sports</label>
+                <input type="text" name="sports" placeholder="Sports" />
+              </div>
+            </div>
+
+            <div class="feild-sec-eight">
+              <div class="feild-set-twenty-six">
+                <label for="voter-id">Voter ID</label>
+                <input type="text" name="voter-id" placeholder="Voter ID" />
+              </div>
+              <div class="feild-set-twenty-seven">
+                <label for="pan-card-no"
+                  >Pan Card No.<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="pan-card-no"
+                  placeholder="Pan Card No."
+                />
+              </div>
+
+              <div class="feild-set-twenty-eight">
+                <label for="place-of-birth"
+                  >Place Of Birth<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="place-of-birth"
+                  placeholder="Place Of Birth"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-twenty-nine">
+                <label for="tashil-birth-place"
+                  >Tashil(Birth Place)<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="tashil-birth-place"
+                  placeholder="Tashil (Birth Place)"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="feild-sec-nine">
+              <div class="feild-set-thirty">
+                <label for="joining-activites"
+                  >I wish to join following activites</label
+                >
+                <input
+                  type="text"
+                  name="joining-activites"
+                  placeholder="Activites..."
+                />
+              </div>
+              <div class="feild-set-thirty-one">
+                <label for="eligible-for-scholarship"
+                  >Eligible for Govt. Freeship/Scholarship<span class="red"
+                    >*</span
+                  ></label
+                >
+                <select name="eligible-for-scholarship">
+                  <option value="">Select</option>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+
+              <div class="feild-set-thirty-two">
+                <label for="physical-challenged"
+                  >Physical Challenged<span class="red">*</span></label
+                >
+                <select name="physical-challenged">
+                  <option value="">Select</option>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+              <div class="feild-set-thirty-three">
+                <label for="sport-reservation"
+                  >D'you wish admission from sport reservation?
+                  <span class="red">*</span></label
+                >
+                <select name="sport-reservation">
+                  <option value="">Select</option>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- <div class="feild-sec-ten">
+              <div class="feild-set-thirty-four">
+                <label for="ex-serviceman-quota"
+                  >Do you wish admission from Ex-Serviceman Quota</label
+                >
+                <select name="ex-serviceman-quota">
+                  <option value="">Select</option>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+            </div> -->
+          </fieldset>
+
+          <fieldset>
+            <legend>Student Bank Details</legend>
+
+            <div class="feild-sec-eleven">
+              <div class="feild-set-thirty-five">
+                <label for="name-on-thepass-book"
+                  >Name on Bank Passbook <span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="name-on-thepass-book"
+                  id="name-on-thepass-book"
+                  placeholder="Name on Bank Passbook"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="feild-sec-twelve">
+              <div class="feild-set-thirty-six">
+                <label for="bank-name"
+                  >Bank Name <span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="bank-name"
+                  id="bank-name"
+                  placeholder="Bank Name"
+                  required
+                />
+              </div>
+              <div class="feild-set-thirty-seven">
+                <label for="branch-name"
+                  >Branch Name <span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="branch-name"
+                  placeholder="Branch Name"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-thirty-eight">
+                <label for="ac-no"
+                  >Bank Account Number<span class="red">*</span></label
+                >
+                <input
+                  type="number"
+                  name="ac-no"
+                  placeholder="Bank Account Number"
+                  required
+                />
+              </div>
+              <div class="feild-set-thirty-nine">
+                <label for="ifsc-code"
+                  >Bank IFSC Code<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="ifsc-code"
+                  placeholder="Bank IFSC Code"
+                  required
+                />
+              </div>
+            </div>
+            <div class="button-section">
+              <div class="btn-one">
+                <button><a href="addpannel.html">Back</a></button>
+              </div>
+              <div class="btn-two">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

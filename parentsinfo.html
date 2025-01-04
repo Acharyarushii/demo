@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="parentsinfostyle.css" />
+    <title>Parents Information</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="img">
+        <img src="logo2.png" alt="" />
+      </div>
+      <div class="address">
+        <p class="h1">Gramonnati Mandal's</p>
+        <p class="h2">Art's, Commerce & Science College</p>
+        <p class="h3">
+          Narayangaon, Tal: Junnar, Dist:Pune, Maharashtra - 410504<br />
+          Affiliated to Savitribai Phule Pune University<br />
+          ID No. PU/PN/1993/100
+        </p>
+      </div>
+      <div class="img">
+        <img src="logo1.png" alt="" />
+      </div>
+    </header>
+    <main>
+      <section>
+        <form>
+          <!-- <div class="form-start"> -->
+          <fieldset>
+            <legend class="legend">Parents Information</legend>
+            <div class="section1">
+              <div class="feild-set-one">
+                <label for="Fathers-Guardian-Full-Name"
+                  >Father's/Guardian Full Name<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="Fathers-Guardian-Full Name"
+                  id="Fathers-Guardian-Full-Name"
+                  placeholder="Father's/Guardian-Full-Name"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-two">
+                <label for="Mothers-Full-Name"
+                  >Mother's Full Name<span class="red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="Mothers-Full-Name"
+                  id="Mothers-Full-Name"
+                  placeholder="Mother's Full Name"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-three">
+                <label for="Fathers-Occupation">Father's Occupation</label>
+                <input
+                  type="text"
+                  name="Fathers-Occupation"
+                  id="Fathers-Occupation"
+                  placeholder="Father's Occupation"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-four">
+                <label for="Guardians-Mobile-No">Mother's Occupation</label>
+                <input
+                  type="text"
+                  name="Mothers-Occupation"
+                  id="Mothers-Occupation"
+                  placeholder="Mother's Occupation"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="section2">
+              <div class="feild-set-five">
+                <label for="Annual-Income"
+                  >Annual Income<span class="red">*</span></label
+                >
+                <input
+                  type="number"
+                  name="Annual-Income"
+                  id="Annual-Income"
+                  placeholder="Annual-Income"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-six">
+                <label for="Fathers-Mobile No"
+                  >Father's Mobile No<span class="red">*</span></label
+                >
+                <input
+                  type="number"
+                  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="10"
+                  name="Fathers-Mobile No"
+                  id="Fathers-Mobile No"
+                  placeholder="Father's Mobile No"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-seven">
+                <label for="Mothers-Mobile-No">Mother's Mobile No.</label>
+                <input
+                  type="number"
+                  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="10"
+                  name="Mothers-Mobile-No"
+                  id="Mothers-Mobile-No"
+                  placeholder="Mother's Mobile No"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset2">
+            <legend class="legend">Guardian's Information</legend>
+            <div class="section3">
+              <div class="feild-set-eight">
+                <label for="Local-Guardians">Local Guradian's Name</label>
+                <input
+                  type="text"
+                  name="Local-Guardians"
+                  id="Local-Guardians"
+                  placeholder="Local Guradian's Name"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-nine">
+                <label for="Guradians-Address">Guradian's Address</label>
+                <input
+                  type="text"
+                  name="Guradians-Address"
+                  id="Guradians-Address"
+                  placeholder="Guradian's Address"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-ten">
+                <label for="Guradians-Relationship"
+                  >Guradian's Relationship</label
+                >
+                <input
+                  type="text"
+                  name="Guradians-Relationship"
+                  id="Guradians-Relationship"
+                  placeholder="Guradian's Relationship"
+                  required
+                />
+              </div>
+
+              <div class="feild-set-eleven">
+                <label for="Guardians-Mobile-No">Guardian's Mobile No.</label>
+                <input
+                  type="number"
+                  name="Guardians-Mobile-No"
+                  id="Guardians-Mobile-No"
+                  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="10"
+                  placeholder="Guardian's Mobile No."
+                  required
+                />
+              </div>
+            </div>
+            <div class="button-section">
+              <div class="btn-one">
+                <button><a href="addpannel.html">Back</a></button>
+              </div>
+              <div class="btn-two">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

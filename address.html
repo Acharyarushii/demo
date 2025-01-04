@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="addressstyle.css" />
+    <title>Address Details</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="img">
+        <img src="logo2.png" alt="" />
+      </div>
+      <div class="address">
+        <p class="h1">Gramonnati Mandal's</p>
+        <p class="h2">Art's, Commerce & Science College</p>
+        <p class="h3">
+          Narayangaon, Tal: Junnar, Dist:Pune, Maharashtra - 410504<br />
+          Affiliated to Savitribai Phule Pune University<br />
+          ID No. PU/PN/1993/100
+        </p>
+      </div>
+      <div class="img">
+        <img src="logo1.png" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <section class="sec-one">
+        <form action="">
+          <fieldset>
+            <legend>Address Details</legend>
+
+            <section class="address-containt">
+              <div class="address-sec-one">
+                <div class="feild-set-one">
+                  <label for="permenant-address"
+                    >Permenant Address<span class="red">*</span></label
+                  >
+                  <textarea
+                    name="permenant-address"
+                    id="permenant-address"
+                    cols="0"
+                    rows="1"
+                    placeholder="Enter.."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="sec1">
+                  <div class="feild-set-two">
+                    <label for="country"
+                      >Country<span class="red">*</span></label
+                    >
+                    <select name="country" id="country-permenant" required>
+                      <option value="">Select Country</option>
+                      <option value="india">India</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="feild-set-three">
+                    <label for="state">State<span class="red">*</span></label>
+                    <select name="state" id="state-permenant" required>
+                      <option value="">Select State</option>
+                      <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                      <option value="ASSAM">ASSAM</option>
+                      <option value="ARUNACHAL PRADESH">
+                        ARUNACHAL PRADESH
+                      </option>
+                      <option value="BIHAR">BIHAR</option>
+                      <option value="GUJRAT">GUJRAT</option>
+                      <option value="HARYANA">HARYANA</option>
+                      <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                      <option value="JAMMU & KASHMIR">JAMMU & KASHMIR</option>
+                      <option value="KARNATAKA">KARNATAKA</option>
+                      <option value="KERALA">KERALA</option>
+                      <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                      <option value="12">MAHARASHTRA</option>
+                      <option value="MANIPUR">MANIPUR</option>
+                      <option value="MEGHALAYA">MEGHALAYA</option>
+                      <option value="MIZORAM">MIZORAM</option>
+                      <option value="NAGALAND">NAGALAND</option>
+                      <option value="ORISSA">ORISSA</option>
+                      <option value="PUNJAB">PUNJAB</option>
+                      <option value="RAJASTHAN">RAJASTHAN</option>
+                      <option value="SIKKIM">SIKKIM</option>
+                      <option value="TAMIL NADU">TAMIL NADU</option>
+                      <option value="TRIPURA">TRIPURA</option>
+                      <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                      <option value="WEST BENGA">WEST BENGAL</option>
+                      <option value="DELHI">DELHI</option>
+                      <option value="GOA">GOA</option>
+                      <option value="pONDICHERY">PONDICHERY</option>
+                      <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+                      <option value="DAMAN & DIU">DAMAN & DIU</option>
+                      <option value="DADRA & NAGAR">DADRA & NAGAR</option>
+                      <option value="31">CHANDIGARH</option>
+                      <option value="ANDAMAN & NICOBAR">
+                        ANDAMAN & NICOBAR
+                      </option>
+                      <option value="UTTARANCHAL">UTTARANCHAL</option>
+                      <option value="JHARKHAND">JHARKHAND</option>
+                      <option value="CHATTISGARH">CHATTISGARH</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="sec1">
+                  <div class="feild-set-four">
+                    <label for="city-village"
+                      >City/Village<span class="red">*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="city-village"
+                      id="city-village-permenant"
+                      placeholder="City/Village"
+                      required
+                    />
+                  </div>
+                  <div class="feild-set-five">
+                    <label for="area">Area<span class="red">*</span></label>
+                    <select name="area" id="area-permenant" required>
+                      <option value="">Select Area</option>
+                      <option value="Urban">Urban</option>
+                      <option value="Rural">Rural</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="feild-set-six">
+                  <label for="pin-code"
+                    >Pin Code<span class="red">*</span></label
+                  >
+                  <input
+                    type="number"
+                    name="pin-code"
+                    id="pin-code-permenant"
+                    oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="12"
+                    placeholder="Pin Code"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="address-sec-two">
+                <div class="feild-set-one">
+                  <label for="correspondence-address"
+                    >Correspondence Address<span class="red">*</span></label
+                  >
+                  <textarea
+                    name="correspondence-address"
+                    id="correspondence-address"
+                    cols="0"
+                    rows="1"
+                    placeholder="Enter.."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="sec1">
+                  <div class="feild-set-seven">
+                    <label for="country"
+                      >Country<span class="red">*</span></label
+                    >
+                    <select name="country" id="country-correspondence" required>
+                      <option value="">Select Country</option>
+                      <option value="india">India</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="feild-set-eight">
+                    <label for="state">State<span class="red">*</span></label>
+                    <select name="state" id="state-correspondence" required>
+                      <option value="">Select State</option>
+                      <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                      <option value="ASSAM">ASSAM</option>
+                      <option value="ARUNACHAL PRADESH">
+                        ARUNACHAL PRADESH
+                      </option>
+                      <option value="BIHAR">BIHAR</option>
+                      <option value="GUJRAT">GUJRAT</option>
+                      <option value="HARYANA">HARYANA</option>
+                      <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                      <option value="JAMMU & KASHMIR">JAMMU & KASHMIR</option>
+                      <option value="KARNATAKA">KARNATAKA</option>
+                      <option value="KERALA">KERALA</option>
+                      <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                      <option value="12">MAHARASHTRA</option>
+                      <option value="MANIPUR">MANIPUR</option>
+                      <option value="MEGHALAYA">MEGHALAYA</option>
+                      <option value="MIZORAM">MIZORAM</option>
+                      <option value="NAGALAND">NAGALAND</option>
+                      <option value="ORISSA">ORISSA</option>
+                      <option value="PUNJAB">PUNJAB</option>
+                      <option value="RAJASTHAN">RAJASTHAN</option>
+                      <option value="SIKKIM">SIKKIM</option>
+                      <option value="TAMIL NADU">TAMIL NADU</option>
+                      <option value="TRIPURA">TRIPURA</option>
+                      <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                      <option value="WEST BENGA">WEST BENGAL</option>
+                      <option value="DELHI">DELHI</option>
+                      <option value="GOA">GOA</option>
+                      <option value="pONDICHERY">PONDICHERY</option>
+                      <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+                      <option value="DAMAN & DIU">DAMAN & DIU</option>
+                      <option value="DADRA & NAGAR">DADRA & NAGAR</option>
+                      <option value="31">CHANDIGARH</option>
+                      <option value="ANDAMAN & NICOBAR">
+                        ANDAMAN & NICOBAR
+                      </option>
+                      <option value="UTTARANCHAL">UTTARANCHAL</option>
+                      <option value="JHARKHAND">JHARKHAND</option>
+                      <option value="CHATTISGARH">CHATTISGARH</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="sec1">
+                  <div class="feild-set-nine">
+                    <label for="city-village-correspondence"
+                      >City/Village<span class="red">*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="city-village"
+                      id="city-village-correspondence"
+                      placeholder="City/Village"
+                      required
+                    />
+                  </div>
+                  <div class="feild-set-ten">
+                    <label for="area">Area<span class="red">*</span></label>
+                    <select name="area" id="area-correspondence" required>
+                      <option value="">Select Area</option>
+                      <option value="Urban">Urban</option>
+                      <option value="Rural">Rural</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="feild-set-eleven">
+                  <label for="pin-code"
+                    >Pin Code<span class="red">*</span></label
+                  >
+                  <input
+                    type="number"
+                    name="pin-code"
+                    id="pin-code-correspondence"
+                    oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="12"
+                    placeholder="Pin Code"
+                    required
+                  />
+                </div>
+              </div>
+            </section>
+
+            <div class="button-section">
+              <div class="btn-one">
+                <button
+                  type="button"
+                  onclick="window.location.href='addpannel.html'"
+                >
+                  <!-- <a href="addpannel.html">Back</a> -->
+                  back
+                </button>
+              </div>
+              <div class="btn-two">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
